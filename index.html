@@ -6,20 +6,60 @@
 
 <style>
 body{
+  background: linear-gradient(#ffd6ec,#ffeef7);
   text-align:center;
   font-family:sans-serif;
-  background:#ffe4ec;
+  margin:0;
+  padding:20px;
+}
+
+h1{
+  color:#8a2be2;
+  font-size:40px;
+}
+
+p{
+  font-size:20px;
 }
 
 img{
   width:300px;
   max-width:80%;
+  animation: float 2s ease-in-out infinite;
 }
 
 button{
+  background:#8a2be2;
+  color:white;
+  border:none;
+  border-radius:20px;
+  padding:15px 25px;
+  font-size:18px;
+  cursor:pointer;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+a{
+  color:#8a2be2;
   font-size:20px;
-  padding:10px 20px;
-  margin:10px;
+  text-decoration:none;
+}
+
+@keyframes float{
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
 }
 </style>
 
