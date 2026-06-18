@@ -2,18 +2,58 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+<title>幽咲ミント</title>
+
+<style>
+body{
+  text-align:center;
+  font-family:sans-serif;
+  background:#ffe4ec;
+}
+
+img{
+  width:300px;
+  max-width:80%;
+}
+
+button{
+  font-size:20px;
+  padding:10px 20px;
+  margin:10px;
+}
+</style>
+
 </head>
 
 <body>
 
-<a-scene>
+<h1>👻 幽咲ミント 👻</h1>
 
-<a-box position="0 1 -3"></a-box>
+<img src="minto.png">
 
-<a-camera></a-camera>
+<p>
+ホラー大好き元気っ子高校生VTuber！
+</p>
 
-</a-scene>
+<button onclick="playVoice()">
+自己紹介を聞く
+</button>
+
+<p>
+<a href="https://x.com/" target="_blank">
+Xはこちら
+</a>
+</p>
+
+<audio id="voice">
+<source src="voice.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playVoice(){
+ document.getElementById("voice").play();
+}
+</script>
 
 </body>
 </html>
